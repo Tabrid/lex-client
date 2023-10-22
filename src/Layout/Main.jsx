@@ -4,8 +4,8 @@ import Footer from "../Component/Footer/Footer";
 
 const Main = () => {
     return (
-        <div>
-            <Navbar></Navbar>
+        <div className="bg-[rgba(29,_52,_74,_0.77)]">
+            <Navbar ></Navbar>
             <Outlet></Outlet>
             <Footer></Footer>
         </div>
