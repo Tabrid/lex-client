@@ -4,6 +4,8 @@ import {
 import Main from "../Layout/Main";
 import Login from "../Page/Login/Login";
 import Home from "../Page/Home/Home";
+import DashBoard from "../Layout/DashBoard";
+import DashboardHome from "../Page/DashboardHome/DashboardHome";
 
  export const router = createBrowserRouter([
     {
@@ -18,11 +20,19 @@ import Home from "../Page/Home/Home";
           path: "/login",
           element:<Login></Login>,
         },
-        {
-          path: "/contact",
-          element: <h1>Contact</h1>,
-        },
+        
       ],
     },
+    {
+      path: "/dashboard",
+      element:<DashBoard></DashBoard>,
+      children: [
+        {
+          path: "/dashboard",
+          element: <DashboardHome></DashboardHome>,
+        }
+        
+      ],
+    }
   ]);
   

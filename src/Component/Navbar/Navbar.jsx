@@ -17,24 +17,11 @@ const Navbar = () => {
 
 
                             <li>
-                                <div className="dropdown dropdown-bottom dropdown-end">
-                                    <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                        <div className="w-10 rounded-full ">
-                                            <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
-                                        </div>
-                                    </label>
-                                    <ul tabIndex={0} className="menu z-0 menu-compact dropdown-content mt-6 p-2 shadow bg-[#1d344a] rounded-box w-52">
-                                        <li>
-                                            <Link className="justify-between text-white mr-5">
 
-                                                <Link to="/profile">Profile</Link>
-
-                                            </Link>
-                                        </li>
-
-                                        <li><Link className=" text-white mr-5">Logout</Link></li>
-                                    </ul>
+                                <div className="w-10 rounded-full ">
+                                    <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
                                 </div>
+
                             </li>
                         </>
                     </ul>
@@ -46,7 +33,7 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex cursor-pointer">
                 <ul className="menu menu-horizontal p-0">
                     <li className='text-white mt-5'><Link to="/">Home</Link></li>
-                   
+
                     <li className='text-white mt-5 mr-32'><Link to="/blog">Blog</Link></li>
                     <li className=" "><div id="RootRoot" className="flex flex-row justify-between w-full items-start mt-[-24px]">
                         <img src="" id="LinkPng" />
@@ -72,24 +59,13 @@ const Navbar = () => {
 
 
                         <li>
-                            <div className="dropdown dropdown-bottom dropdown-end">
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-                                    <div className="w-10 rounded-full ">
-                                        <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
-                                    </div>
-                                </label>
-                                <ul tabIndex={0} className="menu menu-compact dropdown-content mt-6 p-2 shadow bg-gray-900 rounded-box w-52">
-                                    <li>
-                                        <Link className="justify-between text-white mr-5">
 
-                                            <Link to="/profile">Profile</Link>
-
-                                        </Link>
-                                    </li>
-
-                                    <li><Link className=" text-white mr-5">Logout</Link></li>
-                                </ul>
+                            <Link to="/dashboard">
+                            <div className="w-24 rounded-full ">
+                                <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
                             </div>
+                            </Link>
+
                         </li>
                     </>
                 </ul>
