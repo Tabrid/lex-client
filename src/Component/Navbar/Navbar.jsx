@@ -33,6 +33,7 @@ const Navbar = () => {
             <div className="navbar-center hidden lg:flex cursor-pointer">
                 <ul className="menu menu-horizontal p-0">
                     <li className='text-white mt-5'><Link to="/">Home</Link></li>
+                    <li className='text-white mt-5'><Link to="/appointment">Appointment</Link></li>
 
                     <li className='text-white mt-5 mr-32'><Link to="/blog">Blog</Link></li>
                     <li className=" "><div id="RootRoot" className="flex flex-row justify-between w-full items-start mt-[-24px]">

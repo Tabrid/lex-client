@@ -1,4 +1,4 @@
-import Appointment from "../../Component/Appointment/Appointment";
+import MakeAppointment from "../../Component/MakeAppointment/MakeAppointment";
 import Carusel from "../../Component/Carusel/Carusel";
 import Whylex from "../../Component/Whylex/Whylex";
 import Facility from "../../Component/Facility/Facility";
@@ -22,7 +22,7 @@ const Home = () => {
             <Packages></Packages>
             
             <Lawyer></Lawyer>
-            <Appointment></Appointment>
+            <MakeAppointment></MakeAppointment>
             <Testymony></Testymony>
             <Facility></Facility>
             <Subscribe></Subscribe>

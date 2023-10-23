@@ -1,4 +1,4 @@
-const Appointment = () => {
+const MakeAppointment = () => {
   return (
     <div className="hero min-h-screen bg-[#1d344a]">
       <div className="hero-content flex-col lg:flex-row-reverse">
@@ -16,4 +16,4 @@ const Appointment = () => {
   );
 };
 
-export default Appointment;
+export default MakeAppointment;
