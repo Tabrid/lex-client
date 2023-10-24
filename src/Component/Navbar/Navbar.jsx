@@ -63,7 +63,7 @@ const Navbar = () => {
                             <div
                                 className="bg-white flex flex-col justify-center pl-4 w-64 shrink-0 h-12 items-start rounded-[25px]"
                             >
-                                <div className="text-sm font-['Poppins'] text-black/70">Search</div>
+                                <div className="text-sm font-['Poppins'] text-black/70">{t("Home.Navbar.search")}</div>
                             </div>
                             <button
                                 className="bg-[#daa21e] flex flex-col justify-center w-12 shrink-0 h-12 items-center rounded-[25px]"

@@ -1,15 +1,19 @@
 import Modal from "../Modal/Modal";
+import { useTranslation } from 'react-i18next'
 
 const Carusel = () => {
+
+    const { t } = useTranslation()
+
     return (
         <div className="carousel w-full">
             <div id="slide1" className="carousel-item relative w-full">
                 <div className=" w-full  bg-[#1d344a] flex ">
                     <div className="w-1/2 justify-center items-center">
                        <div className="justify-center mt-16">
-                       <h1 className="text-center text-4xl font-['Open_Sans'] font-bold text-white mt-10 ">Do you have any question?</h1>
-                        <h1 className="text-center text-3xl font-['Open_Sans'] font-semibold text-white mt-10"> Ask our chatbot.</h1>
-                        <button className="btn btn-neutral justify-center ml-40 bg-[#071522] w-[332px]  h-10  text-center rounded-[25px] mt-10" onClick={()=>document.getElementById('my_modal_3').showModal()}>Chat Now</button>
+                       <h1 className="text-center text-4xl font-['Open_Sans'] font-bold text-white mt-10 ">{t("Home.Banner.first.title")}</h1>
+                        <h1 className="text-center text-3xl font-['Open_Sans'] font-semibold text-white mt-10"> {t("Home.Banner.first.subtitle")}</h1>
+                        <button className="btn btn-neutral justify-center ml-40 bg-[#071522] w-[332px]  h-10  text-center rounded-[25px] mt-10" onClick={()=>document.getElementById('my_modal_3').showModal()}>{t("Home.Banner.first.btn")}</button>
                        </div>
                     </div>
                     <div className="w-1/2 justify-center mt-10 ml-10">
@@ -26,9 +30,9 @@ const Carusel = () => {
             <div className=" w-full h-96 bg-[#1d344a] flex ">
                     <div className="w-1/2 justify-center items-center">
                        <div className="justify-center mt-16">
-                       <h1 className="text-center text-4xl font-['Open_Sans'] font-bold text-white mt-10 ">Do you have any question?</h1>
-                        <h1 className="text-center text-3xl font-['Open_Sans'] font-semibold text-white mt-10"> Ask our chatbot.</h1>
-                        <button className="btn btn-neutral justify-center ml-40 bg-[#071522] w-[332px]  h-10  text-center rounded-[25px] mt-10">Appointment now</button>
+                       <h1 className="text-center text-4xl font-['Open_Sans'] font-bold text-white mt-10 ">{t("Home.Banner.second.title")}</h1>
+                        <h1 className="text-center text-3xl font-['Open_Sans'] font-semibold text-white mt-10"> {t("Home.Banner.second.subtitle")}</h1>
+                        <button className="btn btn-neutral justify-center ml-40 bg-[#071522] w-[332px]  h-10  text-center rounded-[25px] mt-10">{t("Home.Banner.second.btn")}</button>
                        </div>
                     </div>
                     <div className="w-1/2 justify-center mt-20 ml-10">

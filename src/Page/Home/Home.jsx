@@ -9,6 +9,7 @@ import Moto from "../../Component/Moto/Moto";
 import Testymony from "../../Component/Testymony/Testymony";
 import Lawyer from "../../Component/Lawyer/Lawyer";
 import Service from "../../Component/Service/Service";
+import FacebookMsg from "../../Component/FacebookMsg/FacebookMsg";
 
 
 const Home = () => {
@@ -16,6 +17,7 @@ const Home = () => {
         <div >
             <Carusel></Carusel>
             <Moto></Moto>
+            <FacebookMsg></FacebookMsg>
             <Whylex></Whylex>
             <Service></Service>
             <Stats></Stats>
