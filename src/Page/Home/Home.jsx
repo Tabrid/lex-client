@@ -10,6 +10,7 @@ import Testymony from "../../Component/Testymony/Testymony";
 import Lawyer from "../../Component/Lawyer/Lawyer";
 import Service from "../../Component/Service/Service";
 import FacebookMsg from "../../Component/FacebookMsg/FacebookMsg";
+import Question from "../../Component/Question/Question";
 
 
 const Home = () => {
@@ -27,6 +28,7 @@ const Home = () => {
             <MakeAppointment></MakeAppointment>
             <Testymony></Testymony>
             <Facility></Facility>
+            <Question></Question>
             <Subscribe></Subscribe>
             
         </div>

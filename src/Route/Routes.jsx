@@ -8,6 +8,8 @@ import DashBoard from "../Layout/DashBoard";
 import DashboardHome from "../Page/DashboardHome/DashboardHome";
 import Appointment from "../Page/Appointment/Appointment";
 import About from "../Page/About/About";
+import Blog from "../Page/Blog/Blog";
+import Contact from "../Page/Contact/Contact";
 
  export const router = createBrowserRouter([
     {
@@ -29,6 +31,14 @@ import About from "../Page/About/About";
         {
           path: "/about",
           element:<About></About>,
+        },
+        {
+          path: "/blog",
+          element:<Blog></Blog>,
+        },
+        {
+          path: "/contact",
+          element:<Contact></Contact>,
         },
         
       ],

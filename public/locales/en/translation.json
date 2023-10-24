@@ -6,7 +6,8 @@
         "appointment": "Appointment",
         "blog": "Blog",
         "search": "search",
-        "about": "About"
+        "about": "About",
+        "contact": "Contact"
     },
     "Banner": {
         "first" :{
