@@ -1,4 +1,5 @@
 import Question from "../../Component/Question/Question";
+import ContactModal from "./ContactModal/ContactModal";
 
 const Contact = () => {
     return (
@@ -11,14 +12,15 @@ const Contact = () => {
                     For emergency support
                 </div>
                 <button className="bg-[rgba(222,_84,_84,_0.52)] hover:bg-[rgba(222,_84,_84,_0.52)] w-fit flex flex-col btn  items-center px-32 py-1 rounded-[32px]">
-                    <div className="text-3xl  font-['Poppins'] font-bold text-white">
+                    <button className="text-3xl  font-['Poppins'] font-bold text-white" onClick = {()=> document.getElementById('ContactModal').showModal()}>
                         Click Here
-                    </div>
+                    </button>
                 </button>
             </div>
             <div className="text-6xl font-['Poppins'] font-bold text-white my-10">
                 Lex Hotline NO: 017XXXXXXX
             </div>
+           <ContactModal></ContactModal>
 
         </div>
     );

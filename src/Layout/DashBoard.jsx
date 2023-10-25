@@ -1,8 +1,11 @@
 import { Link, Outlet } from "react-router-dom";
 import Navbar from "../Component/Navbar/Navbar";
 import Footer from "../Component/Footer/Footer";
+import { useContext } from "react";
+import { AuthContext } from "../Context/UserContext";
 
 const DashBoard = () => {
+    const {logOut} = useContext(AuthContext);
     return (
         <div className="max-w-full">
             <Navbar></Navbar>
@@ -42,11 +45,11 @@ const DashBoard = () => {
                         id="IconRoot"
                         className="w-4"
                     /> My Profile</button></Link>
-                    <Link to="/profile/password"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0" onClick={logOut}><img
                         src="https://file.rendit.io/n/OK1UKF1nQhsmTRonUJkv.svg"
                         id="IconRoot"
                         className="w-4"
-                    /> Logout</button></Link>
+                    /> Logout</button>
                 </div>
                 <div className='bg-gray-900 w-3/4 min-h-screen'>
                     <Outlet></Outlet>

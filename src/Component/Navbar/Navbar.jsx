@@ -1,10 +1,13 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next'
 import { useEffect } from "react";
+import { useContext } from "react";
+import { AuthContext } from "../../Context/UserContext";
 
 const Navbar = () => {
 
     const { t, i18n } = useTranslation()
+    const {user} = useContext(AuthContext);
 
     const onChangeLang = (e) => {
         i18n.changeLanguage(e.target.value)
@@ -78,15 +81,17 @@ const Navbar = () => {
                         </div>
                     </div>
                     </li>
-                    <>
-                        <li>
-                            <Link to="/dashboard">
-                                <div className="w-24 rounded-full ">
-                                    <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
-                                </div>
-                            </Link>
-                        </li>
-                    </>
+                        {   user?.uid ?
+                             <li>
+                             <Link to="/dashboard">
+                                 <div className="w-24 rounded-full ">
+                                     <img alt='' src="https://i.ibb.co/tKB8PxV/user-circle-1.png" />
+                                 </div>
+                             </Link>
+                         </li>
+                         : <li className='text-white mt-5'><Link to="/login">Login</Link></li>
+                    
+                        }
                 </ul>
             </div>
         </div>

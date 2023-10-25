@@ -29,7 +29,7 @@ const AvaiableLawyer = () => {
                 
                             className="flex btn flex-col gap-5 w-[270px] h-[350px] items-center p-8 rounded-[22px] bg-[#1d344a] hover:bg-[#1d344a]"
                         >
-                            <img src={testy.image} className="w-[75px] h-[75px] rounded-full" />
+                            <img src={testy.image} className="w-[75px] h-[75px] rounded-full online" />
                             <div className="text-center font-['Montserrat'] font-bold tracking-[2] leading-[19.2px] uppercase text-[#bdcdf1] mb-0">
                                 {testy.name}
                             </div>
