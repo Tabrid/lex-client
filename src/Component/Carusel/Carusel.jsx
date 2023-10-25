@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Modal from "../Modal/Modal";
 import { useTranslation } from 'react-i18next'
 
@@ -32,7 +33,9 @@ const Carusel = () => {
                        <div className="justify-center mt-16">
                        <h1 className="text-center text-4xl font-['Open_Sans'] font-bold text-white mt-10 ">{t("Home.Banner.second.title")}</h1>
                         <h1 className="text-center text-3xl font-['Open_Sans'] font-semibold text-white mt-10"> {t("Home.Banner.second.subtitle")}</h1>
+                        <Link to="/appointment">
                         <button className="btn btn-neutral justify-center ml-40 bg-[#071522] w-[332px]  h-10  text-center rounded-[25px] mt-10">{t("Home.Banner.second.btn")}</button>
+                        </Link>
                        </div>
                     </div>
                     <div className="w-1/2 justify-center mt-20 ml-10">

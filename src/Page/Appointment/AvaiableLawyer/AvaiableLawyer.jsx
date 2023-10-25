@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 
 const AvaiableLawyer = () => {
     const testymony = [
@@ -22,10 +23,11 @@ const AvaiableLawyer = () => {
     ]
 
     return (
-        <div className="h-[450px] grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 lg:gap-14 mt-10 ">
+        <div className="h-[450px] grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 lg:gap-14 mt-10 ">
                     {testymony.map((testy) => (
+                        <Link  key={testy.id} to="/lawyardetails">
                         <button
-                            key={testy.id}
+                           
                 
                             className="flex btn flex-col gap-5 w-[270px] h-[350px] items-center p-8 rounded-[22px] bg-[#1d344a] hover:bg-[#1d344a]"
                         >
@@ -37,6 +39,7 @@ const AvaiableLawyer = () => {
                                 {testy.message}
                             </div>
                         </button>
+                        </Link>
                     ))}
                 </div>
     );

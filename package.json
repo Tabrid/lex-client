@@ -20,12 +20,15 @@
     "react-day-picker": "^8.9.1",
     "react-dom": "^18.2.0",
     "react-facebook": "^9.0.12",
+    "react-hook-form": "^7.47.0",
     "react-i18next": "^13.3.1",
     "react-query": "^3.39.3",
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.17.0",
     "react-spinners": "^0.13.8",
     "sort-by": "^1.2.0",
+    "sweetalert": "^2.1.2",
+    "sweetalert2": "^11.7.32",
     "swiper": "^10.3.1"
   },
   "devDependencies": {

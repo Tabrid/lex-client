@@ -11,6 +11,12 @@ import About from "../Page/About/About";
 import Blog from "../Page/Blog/Blog";
 import Contact from "../Page/Contact/Contact";
 import SignUp from "../Page/SignUp/SignUp";
+import LawyerDetails from "../Page/LawyerDetails/LawyerDetails";
+import BookMark from "../Page/BookMark/BookMark";
+import Booking from "../Page/Booking/Booking";
+import Message from "../Page/Message/Message";
+import Profile from "../Page/Profile/Profile";
+import Review from "../Page/Review/Review";
 
  export const router = createBrowserRouter([
     {
@@ -45,6 +51,10 @@ import SignUp from "../Page/SignUp/SignUp";
           path: "/contact",
           element:<Contact></Contact>,
         },
+        {
+          path: "/lawyardetails",
+          element:<LawyerDetails></LawyerDetails>,
+        },
         
       ],
     },
@@ -55,7 +65,27 @@ import SignUp from "../Page/SignUp/SignUp";
         {
           path: "/dashboard",
           element: <DashboardHome></DashboardHome>,
-        }
+        },
+        {
+          path: "/dashboard/bookmark",
+          element: <BookMark></BookMark>,
+        },
+        {
+          path: "/dashboard/booking",
+          element: <Booking></Booking>,
+        },
+        {
+          path: "/dashboard/message",
+          element: <Message></Message>,
+        },
+        {
+          path: "/dashboard/profile",
+          element: <Profile></Profile>,
+        },
+        {
+          path: "/dashboard/review",
+          element: <Review></Review>,
+        },
         
       ],
     }

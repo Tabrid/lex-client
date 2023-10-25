@@ -17,22 +17,22 @@ const DashBoard = () => {
                         className=" w-4 shrink-0"
                     />DashBoard</h1>
 
-                    <Link to="/profile/password"><button className="btn text-left text-white w-full mt-5 mb-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <Link to="/dashboard/booking"><button className="btn text-left text-white w-full mt-5 mb-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/0YB4KAOY7CqXouZklsN3.svg"
                         id="IconRoot"
                         className="w-4 "
                     />  My Bookings</button></Link>
-                    <Link to="/profile/password"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <Link to="/dashboard/message"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/jrh2bdbn2ThJZbvydcGZ.svg"
                         id="IconRoot"
                         className="w-4"
                     /> Messages</button></Link>
-                    <Link to="/profile/password"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <Link to="/dashboard/review"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/zRWaGOKN4sY4Ueb6Qfaw.svg"
                         id="IconRoot"
                         className="w-4"
                     /> Reviews</button></Link>
-                    <Link to="/profile/password"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <Link to="/dashboard/bookmark"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/KbbQnmyRu4YNEpCvYYec.svg"
                         id="IconRoot"
                         className="w-4"
@@ -40,7 +40,7 @@ const DashBoard = () => {
                     <div className="text-xs ml-10 font-['Raleway'] font-light tracking-[1] leading-[27px] uppercase text-[#999999] ">
                         Account
                     </div>
-                    <Link to="/profile/password"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
+                    <Link to="/dashboard/profile"><button className="btn text-white w-full my-2 bg-gray-900 hover:bg-gray-900 border-0"><img
                         src="https://file.rendit.io/n/HmEYbnl7OL8xoIj41mEx.svg"
                         id="IconRoot"
                         className="w-4"
